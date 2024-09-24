@@ -14,10 +14,12 @@ function ContactForm(props) {
     }
 
     props.onSubmit({
+      value: {
       name,
       email,
       message,
-    })
+      }
+    });
 
     setInput(setName, setEmail, setMessage);    
   };
@@ -71,8 +73,8 @@ function ContactForm(props) {
         <button type="submit" className="contact-button">Submit</button>
       </form>
     </div>
-  ) : 
-  {/*(
+  ) : (
+  
     <div>
       <h3>Update entry: {props.edit.value}</h3>
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -84,20 +86,21 @@ function ContactForm(props) {
           className="contact-input"
           onChange={handleChange}
         ></input>
-        <div className="dropdown">
+        {/*<div className="dropdown">
           <button className={`dropbtn ${preferred}`}>
             {preferred || 'Priority'}
           </button>
-          <div className="dropdown-content">
+          {/* <div className="dropdown-content"> */}
             {/* TODO: Add an onClick event that will set the corresponding preferred contact from the `preferredContact` array */}
             {/*<p onClick={preferredContact}>Phone</p>*/}
             {/*<p onClick={preferredContact}>Email</p>*/}
           {/*</div>*/}
         {/*</div>*/}
-        {/*<button className="contact-button">Update</button>*/}
-      {/*</form>*/}
-    {/*</div>*/}
-  {/*)*/};
+        <button className="contact-button">Update</button>
+      </form>
+    </div>
+  );
 }
+
 
 export default ContactForm;
