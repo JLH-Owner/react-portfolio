@@ -5,7 +5,10 @@ export default function Resume() {
         <ul>
           <li>
             <h2>Skills</h2>
-            <p>Software Development, Web Development, Back-end coding, Front-end coding</p>
+            <h3>Client-side</h3>
+            <p>HTML CSS JavaScript React Typescript Bootstrap</p>
+            <h3>Server-side</h3>
+            <p>NodeJS PostgreSQL MongoDB GraphQL</p>
           </li>
           <li>
             <h2>Education</h2>
@@ -13,7 +16,7 @@ export default function Resume() {
           </li>
           <li>
             <h2>Experience</h2>
-            <p>6 months of full-stack developer training including HTML, CSS, Javascript, jQuery, PostgreSQL, MongoDB, React</p>
+            <p>6 months of full-stack developer training</p>
           </li>
         </ul>      
     </div>
