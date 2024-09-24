@@ -46,9 +46,13 @@ export default function Porfolio() {
         <p>
           <a href="https://jlh-owner.github.io/date-night-app/">Date Night App</a>
           <br></br>
+          <a href="file:///C:/Users/smhtm/bootcamp/challenges/svg-logo-maker/logo.svg">SVG Logo Maker</a>
+          <br></br>
           <a href="https://drive.google.com/file/d/1FVc3RJJ1Eg4NUFVv-oxpiKzGG2UcABiJ/view">Employee Tracker with SQL</a>
           <br></br>
           <a href="https://drive.google.com/file/d/1RAo78nCHifK6elShCsQvbSUL6CdHOCfG/view">E-Commerce Site with ORM</a>
+          <br></br>
+          <a href="file:///C:/Users/smhtm/bootcamp/challenges/employee-payroll-tracker/index.html">Employee Payroll Tracker</a>
           <br></br>
           <a href="https://drive.google.com/file/d/1h9tT4pr0xIAcw56JYtzkOtic6iM8n19h/view?pli=1">Social Network API</a>
           <br></br>
