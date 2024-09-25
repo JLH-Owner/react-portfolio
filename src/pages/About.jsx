@@ -2,9 +2,6 @@ export default function About() {
   return (
     <div className="about">
       <h1>About Me</h1>
-      <div id="avatar" className="avatar">
-        <img src="src\assets\images\blonde-avatar.jpg"></img>
-      </div>
       <div id="about-me" className="about-me">
         <p>
           My name is Stacy. I am a full-stack developer in training. I own my own business where I have spent the last 6 years of my career in I.T. for software companies.

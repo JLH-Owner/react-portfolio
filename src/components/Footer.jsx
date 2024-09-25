@@ -2,11 +2,11 @@ import { useLocation } from 'react-router-dom';
 
 function Footer() {
     const currentPage = useLocation().pathname;
+
+    return (
+        'My Portfolio &#169 2024'
+    )
   
-return currentPage (
-    <footer>
-    <p> My Portfolio &#169; 2024</p>
-    </footer>
-)}
+}
 
 export default Footer;
