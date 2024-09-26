@@ -1,7 +1,7 @@
 
 const ProjectList = ({ title, image, githubLink, liveLink })  => {
   return (
-    <div className="project border mb-2 w-50 col-md-4 d-flex flex-column hover-shadow">
+    <div className="project border p-2 mb-2 w-50 col-md-4 d-flex flex-column hover-shadow">
       <h3 className="title">{title}</h3>
       <img src={image} className="w-100" alt={`${title} Screenshot`} />
       <div className="mt-auto">
@@ -15,7 +15,7 @@ const ProjectList = ({ title, image, githubLink, liveLink })  => {
           </a>
         </p>
       </div>
-    </div>
+    </div>    
   );
 };
 

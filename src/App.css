@@ -24,7 +24,10 @@
   text-shadow: 1px -1px 0 white, -3px -3px 2px black, 2px 1px 3px rgba(193, 94, 221, 0.43);
 }
 .resume-link {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.footer-container {
+  border-top: 1px solid #ccc;
 }
 @keyframes logo-spin {
   from {
