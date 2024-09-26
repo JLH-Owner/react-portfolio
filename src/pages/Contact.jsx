@@ -1,20 +1,64 @@
-import ContactForm from '../components/ContactForm';
+import { useState } from 'react';
 
 export default function Contact() {
-  return (
-    <div className="contact">
-      <h1>Contact Me</h1>
-      <a href="https://github.com/JLH-Owner">GitHub</a>
-      <br></br>
-      <a href="https://www.linkedin.com/">LinkedIn</a>
-      <br></br>
-      <a href="jlhclientsolutions@gmail.com">Email</a>
-      <br></br>
-      {/*<a href tel="8039021971">Phone</a>
-      <br></br>*/}
-      <ContactForm />
-    </div>
-  );
-}
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errorMessage, setErrorMessage] = useState("");
+
+    const handleInputChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      if (!formData.name || !formData.email || !formData.message) {
+        setErrorMessage("All fields are required.");
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        setErrorMessage("Invalid email address.");
+      } else {
+        setErrorMessage("");
+        console.log("Form submitted:", formData);
+        return document.getElementById("success").innerHTML = `Message Sent!`
+      }
+    };
+    return (
+      <section className="form-group" id="contact">
+        <h2>Contact Me</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            className="form-control m-2"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            onChange={handleInputChange}
+            value={formData.name}
+            />
+          <input
+            className="form-control m-2"
+            name="email"
+            placeholder="Your Email"
+            onChange={handleInputChange}
+            value={formData.email}
+            />
+            <input
+            className="form-control m-2"
+            name="message"
+            placeholder="Your Message"
+            onChange={handleInputChange}
+            value={formData.message}
+            />
+            <button className="btn btn-primary m-1" type="submit">
+              Send
+            </button>
+        </form>
+        <p className={errorMessage ? "": "bg-success w-25"} id="success"></p>
+        {errorMessage && <p className="bg-warning w-25">{errorMessage}</p>}
+      </section>
+    );
+  }
 
 

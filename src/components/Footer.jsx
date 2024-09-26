@@ -4,7 +4,9 @@ function Footer() {
     const currentPage = useLocation().pathname;
 
     return (
-        'My Portfolio &#169 2024'
+        <div className="container d-flex justify-content-center">
+            <p>My Portfolio &#169; 2024</p>
+        </div>
     )
   
 }

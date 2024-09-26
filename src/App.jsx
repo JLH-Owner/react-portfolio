@@ -1,24 +1,23 @@
 // Bringing in the required import from 'react-router-dom'
+import './App.css'
 import { Outlet } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-
-
   
-export default function App() {
+function App() {
     return (
       <>
-        <Navigation />
+        <Nav />
         <Header />
         <main className="mx-3">
           <Outlet />
-            
-                       
         </main>
         <Footer />
       </>            
-  );
+  )
 }
+
+export default App
         
