@@ -1,19 +1,20 @@
 import { useLocation } from 'react-router-dom';
+import '../App.css';
 
 
 const person = {
     name: 'Stacy Herbert',
     theme: {
         backgroundImage: "url('./src/assets/images/BCH.jpg')",
-        color: 'white'
+        color: 'white',
     }
 };
 
 function Header() {
     const currentPage = useLocation().pathname;
     return (
-        <div className="align-self-center"style={person.theme}>
-            <h1>{person.name}'s Portfolio</h1>
+        <div className="header align-self-center"style={person.theme}>
+           <h1>{person.name}'s Portfolio</h1>
             <img
                 className="avatar"
                 src="src/assets/images/AVA.png"

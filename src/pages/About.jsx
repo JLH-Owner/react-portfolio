@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <div className="about">
-      <h1>About Me</h1>
-      <div id="about-me" className="about-me">
+      <h2>About Me</h2>
+      <div id="about" className="about">
         <p>
           My name is Stacy. I am a full-stack developer in training. I own my own business where I have spent the last 6 years of my career in I.T. for software companies.
           I wanted to expand my business to include or migrate to coding, more specifically, web development. 
