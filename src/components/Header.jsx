@@ -1,11 +1,9 @@
 import { useLocation } from 'react-router-dom';
-import '../App.css';
-
 
 const person = {
     name: 'Stacy Herbert',
     theme: {
-        backgroundImage: "url('./src/assets/images/BCH.jpg')",
+        backgroundImage: "url('src/assets/images/BCH.jpg')",
         color: 'white',
     }
 };
