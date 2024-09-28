@@ -1,3 +1,5 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import ProjectList from '../components/Project';
 import SEO from '../assets/images/SEO.jpg';
 import PHTML from '../assets/images/PHTML.png';
@@ -134,21 +136,21 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="container">
-      <h2>My Projects</h2>
-      <div className="row">
+    <Container fluid='md'>
+      <Row className="justify-content-md-center">
+        <h2>My Projects</h2>
         {projects.map(project => (
           <ProjectList
             key={project.id}
             title={project.title}
             image={project.image}
-            liveLink={project.liveURL}
-            githubLink={project.github}
+            liveURL={project.liveURL}
+            github={project.github}
           />
         )
         )}
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 };
 

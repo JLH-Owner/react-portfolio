@@ -1,6 +1,5 @@
 // Bringing in the required import from 'react-router-dom'
 import './App.css'
-import './_variables.scss'
 import { Outlet } from 'react-router-dom';
 import Nav from './components/Nav';
 import Header from './components/Header';
