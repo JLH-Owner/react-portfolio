@@ -15,7 +15,7 @@ function Header() {
            <h1>{person.name}'s Portfolio</h1>
             <img
                 className="avatar"
-                src= "url('src/assets/images/AVA.png')"
+                src="src/assets/images/AVA.png"
                 alt="Stacy Herbert"
             />
         </div>

@@ -1,7 +1,5 @@
 import Col from 'react-bootstrap/Col';
-//import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-//import Placeholder from 'react-bootstrap/Placeholder';
 import Nav from 'react-bootstrap/Nav'
 
 const ProjectList = ({ title, image, liveURL, github }) => {
