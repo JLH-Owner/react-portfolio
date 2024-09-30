@@ -15,27 +15,36 @@ Using react + vite we built a porfolio with tabs that navigate through different
 ## Implementation
 Pages were built using React components, such as the Project component, in order to display all projects on the Portfolio tab
 ```
-const ProjectList = ({ title, image, githubLink, liveLink })  => {
-  return (
-    <div className="project border p-2 mb-2 w-50 col-md-4 d-flex flex-column hover-shadow">
-      <h3 className="title">{title}</h3>
-      <img src={image} className="w-100" alt={`${title} Screenshot`} />
-      <div className="mt-auto">
-        <p className="title">
-          <a href={liveLink} className="link-offset-2 link-underline link-underline-opacity-0" target="_blank" rel="noopener noreferrer">
-            Live URL
-            </a>
-          {" | "}
-          <a href={githubLink} className="link-offset-2 link-underline link-underline-opacity-0" target="_blank" rel="noopener noreferrer">
-            GitHub Repo
-          </a>
-        </p>
-      </div>
-    </div>    
-  );
-};
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Nav from 'react-bootstrap/Nav'
 
-export default ProjectList;
+const ProjectList = ({ title, image, liveURL, github }) => {
+  return (
+    
+        <Col>
+          <div className="d flex justify-content-around">
+            <Card style={{ width: '18rem '}}>
+              <Card.Img variant="top" src={image} alt={`${title} Screenshot`} />
+              <Card.Body>
+                <Card.Title>{title}</Card.Title>         
+                  <Nav className="project-links">
+                    <Nav.Item>                      
+                    <Nav.Link href={liveURL} target="_blank" rel="noopener noreferrer">&#8594; Live URL</Nav.Link>
+                    </Nav.Item>                                       
+                    <Nav.Item>
+                    <Nav.Link href={github} target="_blank" rel="noopener noreferrer">&#8594; GitHub Repo</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+              </Card.Body>
+            </Card>
+          </div>
+        </Col>        
+      
+  );
+}
+
+export default ProjectList
 ```
 ## Usage
 Click the live link and view the app by navigating via the nav-tabs:
