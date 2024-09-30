@@ -8,7 +8,7 @@ export default function Resume() {
         </i>
       </div>
       <div className="resume-image">
-        <img src="src/assets/images/RSM.png" />
+        <img src="src/assets/images/RSM.png" alt="Stacy Herbert's Resume" />
       </div>
     </div>
   );

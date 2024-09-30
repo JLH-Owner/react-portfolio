@@ -30,6 +30,10 @@
 .resume-link {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
+.resume-image {
+  max-width: 100%;
+  width: auto;
+}
 .footer-container {
   border-top: 1px solid #ccc;
 }
